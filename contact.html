@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 - 聯絡我</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            background-image: url('https://hips.hearstapps.com/hmg-prod/images/091310-66e4164a0e115.png?crop=0.497xw:0.990xh;0,0.00962xh&resize=640:*');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6); /* 60% 透明度 */
+            z-index: -1;
+        }
+
+        nav, .container, footer {
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.7); /* 70% 透明度的黑色 */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px; /* 圖標大小調整與文字相近 */
+        }
+
+        .social-icons i {
+            font-size: 1em; /* 使圖標與文字大小一致 */
+            vertical-align: middle; /* 垂直置中 */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+        <a href="contact.html">聯絡資訊</a>
+    </nav>
+
+    <div class="container">
+        <h2>聯絡我</h2>
+        <form class="contact-form">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">訊息：</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">送出</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 兔兔的作品網站. 保留所有權利.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://line.me" target="_blank"><i class="fab fa-line"></i></a>
+        </div>
+        <p>聯絡資訊：<a href="mailto:candy940227@gmail.com" style="color: white;">candy940227@gmail.com</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script> <!-- 引入 Font Awesome -->
+</body>
+</html>

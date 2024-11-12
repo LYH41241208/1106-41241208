@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            /* 設置背景圖片及透明度 */
+            background-image: url('https://hips.hearstapps.com/hmg-prod/images/091310-66e4164a0e115.png?crop=0.497xw:0.990xh;0,0.00962xh&resize=640:*');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6); /* 60% 透明度的白色 */
+            z-index: -1;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center; /* 置中 */
+        }
+
+        .rounded-box {
+            border-radius: 15px; /* 圓邊 */
+            overflow: hidden; /* 避免內容超出邊界 */
+            display: inline-block; /* 使圖形居中 */
+            margin-top: 20px; /* 上方間距 */
+        }
+
+        .rounded-box img {
+            width: 100%; /* 圖片自適應寬度 */
+            height: auto; /* 高度自動 */
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.7); /* 70% 透明度的黑色 */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            left: 0; /* 確保頁尾從左邊開始 */
+        }
+
+        .social-icons {
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px; /* 圖標大小 */
+        }
+
+        .social-icons i {
+            font-size: 20px; /* 圖標大小，與文字大小相似 */
+        }
+
+        /* 將段落文字放大 */
+        .about-text {
+            font-size: 1.2em; /* 將字體大小設置為1.2倍 */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+        <a href="contact.html">聯絡資訊</a>
+    </nav>
+
+    <div class="container">
+        <h1>關於我</h1>
+        <p class="about-text">嗚呀伊哈！我是烏薩奇，一隻來自魔法森林的兔子，熱愛探索和學習。我喜歡解決各種問題，並與我的朋友們分享我的發現和冒險經歷。口頭禪是「蛤」</p> <!-- 填入關於我的內容 -->
+        
+        <div class="rounded-box">
+            <img src="https://i.ytimg.com/vi/ihK-LwzNemI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB-otZDNC4GWMA9uOxVSRxZ5hb1AA" alt="關於我的圖片">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 兔兔的作品網站. 保留所有權利.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://line.me" target="_blank"><i class="fab fa-line"></i></a>
+        </div>
+        <p>聯絡資訊：<a href="mailto:candy940227@gmail.com" style="color: white;">candy940227@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
